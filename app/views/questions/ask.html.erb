@@ -2,20 +2,9 @@
 
 
 <form action="/answer">
-  <input type="text" name="answer" placeholder="question">
+  <input type="text" name="question" placeholder="question">
   <input type="submit" value="Ask!">
 </form>
 
 
-
-<ol>
-
-<% @questions.each do |question| %>
-<li>
-  <%= question %></li>
-  <% end %>
-
-</ol>
-
-<%= link_to "answer", answer_path %>
 
